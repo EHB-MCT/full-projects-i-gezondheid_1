@@ -1,4 +1,8 @@
-/* Add a black background color to the top navigation */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 .topnav {
   display: flex;
   height: 4em;
@@ -29,18 +33,51 @@
   width: 3em;
 }
 
-
-
 /* END NAVIGATION */
-
-
 
 /* START HOMEPAGE ZANI EN WAIL*/
 
 .homePage {
-  background-color: rgb(143, 219, 255);
-  height: 60vh;
+  align-content: center;
+  height: 100vh;
+}
 
+.container {
+  margin: 0 auto;
+  width: fit-content;
+  height: fit-content;
+}
+
+.container h1 {
+  position: absolute;
+  margin: 0 auto;
+  font-size: xx-large;
+  font-weight: 700;
+  padding: 1em;
+  background: rgba(255, 255, 255, 0.425);
+}
+
+.red-color {
+  color: red;
+}
+
+.background-image {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 5px;
+  padding: 0;
+}
+
+.homePage img {
+  width: 100%;
+  flex: 1;
 }
 
 /* END HOMEPAGE */
@@ -68,9 +105,8 @@
   height: 30vh;
 }
 
-@media (min-width: 480) {}
+@media (min-width: 480) {
+}
 
-@media (min-width: 768) {}
-
-
-
+@media (min-width: 768) {
+}
