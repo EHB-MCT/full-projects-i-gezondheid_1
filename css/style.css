@@ -123,6 +123,7 @@ h1 {
   text-align: center;
   color: black;
   margin-bottom: 3em;
+  line-height: normal;
 }
 
 .womans img {
@@ -144,8 +145,6 @@ h1 {
 
 .doel-text h2 {
   font-size: 25px;
-  border: 5px solid red;
-  border-radius: 25px;
   width: 218px;
   margin: 0 auto;
 }
@@ -153,11 +152,9 @@ h1 {
   text-align: center;
   color: black;
   margin: 2em auto;
-  
 }
+
 .doel-list {
-  border: 5px solid red;
-  border-radius: 5px;
   text-align: left;
   padding-left: 1em;
   line-height: 30px;
@@ -178,6 +175,7 @@ h1 {
 .thirdPage {
   height: 100vh;
   height: fit-content;
+  margin-top: 5em;
 }
 
  .thirdPage h2 {
@@ -247,15 +245,60 @@ h1 {
   }
 
   .fotoFase1 img {
-    width: 80%;
+    width: 60%;
+
   }
   
   .fotoFase1 p {
     position: relative;
-    left: 100px;
+    left: 200px;
     bottom: 60px;
     font-size: 1.5em;
     font-weight: 700;
+  }
+  
+/* images WAT IS IPO */
+  .womans img {
+    height: fit-content;
+    object-fit: none;
+    border-radius: 0;
+  }
+
+
+  .woman3 {
+    flex: 1;
+  }
+
+  .woman2 {
+    flex: 1;
+  }
+  .woman1 img {
+  width: fit-content;
+   max-width: 500px;
+
+  }
+  .woman2 img, .woman3 img {
+  width: fit-content;
+   max-width: 500px;
+  }
+
+  .womans div {
+    margin: 0;
+  }
+
+  .twoPics{
+    display: flex;
+    align-items: center;
+  }
+  
+  .womans {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .womans div {
+    margin: 1em;
   }
 
 }
@@ -276,7 +319,6 @@ h1 {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  
 }
 
 .dropdown:hover .dropdown-content {
