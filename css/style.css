@@ -190,7 +190,33 @@ h1 {
   font-size: 30pt;
   font-weight: 700;
   text-align: left;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+  animation: pulse 2s infinite;
+  
 }
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+/* .fases {
+  position: sticky;
+  top: 0;
+} */
 
 .fotoFase1 {
   width: fit-content;
@@ -208,7 +234,20 @@ h1 {
   bottom: 30px;
   font-weight: 700;
 }
+
+.tweedeFoto {
+  width: 100%;
+}
+
+.tweedeParagraaf {
+  color: white;
+  position: relative;
+  
+}
+
 /* END THIRD PAGE */
+
+
 
 /* SCHEMA SETH */
 .schemaPage {
@@ -307,357 +346,111 @@ h1 {
 
 }
 
-
-
-
-
-.dropdown {
+/* SETH SCHEMA */
+/* Some positioning and ratios */
+.sticky-container {
+  max-width: 270px;
   position: relative;
-  display: inline-block;
+  margin-left: 50%;
+  margin-top: 15%;
 }
 
-.dropdown-content {
-  display: none;
+.sticky-outer {
+  display: flex;
+  padding-top: 92.5925926%;
+  position: relative;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.sticky {
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+/* Shadow behind the sticky note */
+.sticky::before {
+  box-shadow: -2px 2px 15px 0 rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.25);
+  content: '';
+  width: 90%;
+  left: 5px;
+  height: 83%;
+  position: absolute;
+  top: 30%;
 }
 
-.desc {
-  padding: 15px;
-  text-align: center;
+/* The sticky note itself */
+.sticky-content-ehb {
+  background: linear-gradient(180deg,
+      rgb(255, 187, 187) 0%,
+      rgb(255, 187, 187) 12%,
+      rgb(241, 170, 176) 75%,
+      rgb(247, 190, 190) 100%);
+  width: 100%;
+  height: 100%;
+  padding-top: 10%;
+  padding-left: 10%;
+  font-size: 1.5rem;
+
+  clip-path: url(#stickyClip);
+}
+
+.sticky-content-vub {
+  background: linear-gradient(180deg,
+      rgb(187, 208, 255) 0%,
+      rgb(187, 214, 255) 12%,
+      rgb(170, 186, 241) 75%,
+      rgb(190, 213, 247) 100%);
+  width: 100%;
+  height: 100%;
+  padding-top: 10%;
+  padding-left: 10%;
+  font-size: 1.5rem;
+
+  clip-path: url(#stickyClip);
 }
 
 
-/* SCHEMA SETH */
-.schemaPage {
-  background-color: rgba(0, 0, 0, 0.842);
-  height: 500px;
-  padding-top: 500px;
-  text-align: center;
+.betrokken-leertrajecten {
+  font-size: 0.98rem;
 }
 
-.schemaPage h1 {
-  position: relative;
-  font-size: 50px;
-  font-weight: 700;
-  color: rgb(0, 0, 0);
-  top: -300px;
-  color: white;
+/* Add responsiveness */
+@media screen and (min-width: 640px) {
+  .sticky:before {
+    height: 79%;
+    width: 90%;
+
+  }
+
+  .sticky-content {
+    font-size: 1.25rem;
+  }
 }
 
-.btn {
-  border: 2px solid black;
-  background-color: white;
-  color: black;
-  font-size: 16px;
-  padding: 3px 15px;
-  border-radius: 5px;
-  cursor: pointer;
+@media screen and (min-width: 768px) {
+  .sticky:before {
+    height: 75%;
+    width: 90%;
+  }
+
+  .sticky-content {
+    font-size: 1.5rem;
+  }
 }
 
-.IPO {
-  border-color: lightcoral;
-  color: red;
-  position: relative;
-  left: 675px;
+@media screen and (min-width: 1024px) {
+  .sticky:before {
+    height: 73%;
+    width: 90%;
+  }
+
+  .sticky-content {
+    font-size: 1.875rem;
+  }
 }
 
-.IPO:hover {
-  border-color: lightcoral;
-  color: white;
-  background-color: red;
-}
-
-.EHB {
-  border-color: lightcoral;
-  color: red;
-  position: relative;
-  top: 100px;
-  left: 605px;
-}
-
-.EHB:hover {
-  border-color: lightcoral;
-  color: white;
-  background-color: red;
-}
-
-.VUB {
-  border-color: lightcoral;
-  color: red;
-  position: relative;
-  bottom: 100px;
-  left: 537px;
-}
-
-.VUB:hover {
-  border-color: lightcoral;
-  color: white;
-  background-color: red;
-}
-
-.VPK {
-  border-color: lightcoral;
-  color: red;
-  position: relative;
-  top: 200px;
-}
-
-.VPK:hover {
-  border-color: lightcoral;
-  color: white;
-  background-color: red;
-}
-
-.VK {
-  border-color: lightcoral;
-  color: red;
-  position: relative;
-  top: 200px;
-  left: 100px;
-}
-
-.VK:hover {
-  border-color: lightcoral;
-  color: white;
-  background-color: red;
-}
-
-.VDK {
-  border-color: lightcoral;
-  color: red;
-  position: relative;
-  top: 200px;
-  left: 350px;
-}
-
-.VDK:hover {
-  border-color: lightcoral;
-  color: white;
-  background-color: red;
-}
-
-.BMLT {
-  border-color: lightcoral;
-  color: red;
-  position: relative;
-  top: 200px;
-  left: 450px;
-}
-
-.BMLT:hover {
-  border-color: lightcoral;
-  color: white;
-  background-color: red;
-}
-
-.GK {
-  border-color: lightcoral;
-  color: red;
-  position: relative;
-  bottom: 200px;
-  right: 930px;
-}
-
-.GK:hover {
-  border-color: lightcoral;
-  color: white;
-  background-color: red;
-}
-
-.REVAKI {
-  border-color: lightcoral;
-  color: red;
-  position: relative;
-  bottom: 200px;
-  right: 860px;
-}
-
-.REVAKI:hover {
-  border-color: lightcoral;
-  color: white;
-  background-color: red;
-}
-
-.F {
-  border-color: lightcoral;
-  color: red;
-  position: relative;
-  bottom: 229px;
-  left: 220px;
-}
-
-.F:hover {
-  border-color: lightcoral;
-  color: white;
-  background-color: red;
-}
-
-.P {
-  border-color: lightcoral;
-  color: red;
-  position: relative;
-  bottom: 229px;
-  left: 310px;
-}
-
-.P:hover {
-  border-color: lightcoral;
-  color: white;
-  background-color: red;
-}
-
-.SA {
-  border-color: lightcoral;
-  color: red;
-  position: relative;
-  bottom: 229px;
-  left: 400px;
-}
-
-.SA:hover {
-  border-color: lightcoral;
-  color: white;
-  background-color: red;
-}
-
-.IPOtoEHB {
-  background-color: red;
-  position: relative;
-  left: 724px;
-  top: 100px;
-  width: 3px;
-  height: 100px;
-}
-
-.EHBtoLeft1 {
-  background-color: red;
-  position: relative;
-  top: 112px;
-  right: 424px;
-  width: 400px;
-  height: 3px;
-}
-
-.Left1toVPK {
-  background-color: red;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  width: 3px;
-  height: 100px;
-}
-
-.Left1toVK {
-  background-color: red;
-  position: relative;
-  top: 0px;
-  left: 233px;
-  width: 3px;
-  height: 100px;
-}
-
-.EHBtoRight1 {
-  background-color: red;
-  position: relative;
-  top: 0px;
-  left: 175px;
-  width: 600px;
-  height: 3px;
-}
-
-.Right1toBMLT {
-  background-color: red;
-  position: relative;
-  top: 0px;
-  left: 600px;
-  width: 3px;
-  height: 100px;
-}
-
-.Right1toVDK {
-  background-color: red;
-  position: relative;
-  top: 0px;
-  right: 360px;
-  width: 3px;
-  height: 100px;
-}
-
-.IPOtoVUB {
-  background-color: red;
-  position: relative;
-  top: -200px;
-  right: 223px;
-  width: 3px;
-  height: 100px;
-}
-
-.VUBtoLeft2 {
-  background-color: red;
-  position: relative;
-  top: 0px;
-  right: 586px;
-  width: 600px;
-  height: 3px;
-}
-
-.Left2toGK {
-  background-color: red;
-  position: relative;
-  top: -100px;
-  width: 3px;
-  height: 100px;
-}
-
-.Left2toREVAKI {
-  background-color: red;
-  position: relative;
-  left: 310px;
-  top: 0px;
-  width: 3px;
-  height: 100px;
-}
-
-.VUBtoRight2 {
-  background-color: red;
-  position: relative;
-  top: 100px;
-  left: 238px;
-  width: 600px;
-  height: 3px;
-}
-
-.Right2toSA {
-  background-color: red;
-  position: relative;
-  left: 597px;
-  top: -100px;
-  width: 3px;
-  height: 100px;
-}
-
-.Right2toP {
-  background-color: red;
-  position: relative;
-  right: 237px;
-  top: 0px;
-  width: 3px;
-  height: 100px;
-}
-
-.Right2toF {
-  background-color: red;
-  position: relative;
-  right: 205px;
-  top: 0px;
-  width: 3px;
-  height: 100px;
-}
