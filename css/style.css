@@ -8,6 +8,27 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+.orange {
+  color: orange;
+}
+
+::selection {
+  color: white;
+  background: red;
+}
+
+.wrapper {
+  margin: 3em;
+}
+
 .topnav {
   display: flex;
   height: 4em;
@@ -45,473 +66,396 @@ body {
 
 .logo img {
   width: 3em;
+  margin-top: 4em;
 }
 
 /* END NAVIGATION */
-
-/* START HOMEPAGE ZANI EN WAIL*/
-
 .homePage {
-  margin-top: 4em;
-  align-content: center;
-  height: 100vh;
+  height: 80vh;
+}
+
+/* HOME */
+/* POSITIONERING ANIMATIE HIER */
+
+video {
+  width: 100%;
+  margin-top: 10em;
+}
+/* END HOME */
+
+
+/* Wat is IPO */
+.radius-foto {
+  border-radius: 2em;
+}
+
+.IPO {
   height: fit-content;
 }
 
-.container {
-  position: relative;
-  max-width: 1425px;
-  margin: 0 auto;
-  margin-bottom: 2em;
+.ipo-container {
+ align-items: center;
 }
 
-/* 
-.container h1 {
-  position: absolute;
-  margin: 0 auto;
-  font-size: xx-large;
-  font-weight: 700;
-  padding: 1em;
-  background: rgba(255, 255, 255, 0.425);
-} */
-.red {
-  color: red;
-}
-
-.background-image {
-  position: absolute;
-  bottom: 50%;
-  background: rgba(255, 255, 255, 0.5);
+.ipo-foto img {
   width: 100%;
-  padding: 20px;
 }
 
-h1 {
-  font-size: xx-large;
-  font-weight: 700;
-  text-align: center;
-  /* padding: 0; */
-}
-
-/* .homePage img {
-  width: 100%;
-  flex: 1;
-} */
-
-/* END HOMEPAGE */
-
-/* START SECOND PAGE NAWFAL EN ABDELLA */
-.secondPage {
-  background-color: white;
-  height: 1080px;
-}
-
-.ipo {
-  margin: 0 2em;
-}
-
-.ipo-text h1 {
-  font-size: 50px;
-  margin-bottom: 1em;
-}
-
-.ipo-red {
-  color: red;
-}
-
-.ipo-text {
-  text-align: center;
-  color: black;
+.ipo-tekst {
+  flex: 50%;
   margin-bottom: 3em;
-  line-height: normal;
+  max-width: 550px;
 }
 
-.womans img {
-  width: 200px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 45px;
+.ipo-foto {
+  flex: 50%;
 }
 
-.woman1 img {
-  width: 800px;
+.ipo-tekst h2 {
+  margin: 1em 0;
+  font-size: xx-large;
+  font-weight: bolder;
 }
 
-.womans {
+.ipo-tekst p {
+  line-height:1.2em;
+}
+
+hr {
+  margin-top: 4em;
+  background-color:red;
+  border-color: red;
+  border-radius: 10em;
+}
+
+.doelen-container {
+  margin-top: 4em;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.ipo-tekst ul {
+  line-height: 2em;
+  list-style: url("https://img.icons8.com/ios-filled/25/000000/goal--v1.png");
+  list-style-position: inside;
+}
+
+/* START PARTNERS */
+.partners {
+  height: fit-content;
   text-align: center;
-  margin: 0 auto;
+}
+
+.partners h2 {
+  font-size: xx-large;
+  font-weight: bolder;
+  margin-bottom: 2em;
+  margin-top: 3em;
+}
+
+/* EHB */
+
+.ehb-container {
+  align-items: center;
+}
+
+.ehb-foto img {
   width: 100%;
 }
 
-.womans div {
-  margin: 1em;
+.ehb-foto {
+  flex: 50%;
 }
 
-.doel-text h2 {
-  font-size: 25px;
-  width: 218px;
-  margin: 0 auto;
+.ehb-tekst {
+  flex: 50%;
+  margin-bottom: 3em;
+  max-width: 550px;
+  text-align: start;
+  margin-top: 1.5em;
 }
-.doel-text {
+
+.ehb-tekst p {
+  line-height:1.2em;
+}
+
+/* VUB */
+
+.vub-container {
+  margin-top: 4em;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.vub-tekst {
+  text-align: start;
+  margin-top: 1.5em;
+  flex: 50%;
+  max-width: 550px;
+}
+
+.vub-tekst p{
+  line-height: 1.2em;
+}
+
+.vub-foto {
+  flex: 50%;
+}
+
+.vub-foto img {
+  width: 100%;
+}
+/* END PARTNERS */
+
+/* END of second page */
+
+/* RED-BLOCK leerlijn */
+.red-block {
+  background-color: red;
   text-align: center;
-  color: black;
-  margin: 2em auto;
+  padding: 2em;
 }
 
-.doel-list {
-  text-align: left;
-  padding-left: 1em;
-  line-height: 30px;
-  width: fit-content;
-  margin: 2em auto;
+.red-block h2 {
+  color: white;
+  font-size: xx-large;
+  font-weight: bolder;
 }
-
-.doel-list li {
-  list-style-type: circle;
-}
-
-.woman2 img, .woman3 img {
-  border: 3px dashed red;
-  padding: 15px;
-  background: #f6eaea;
-  background-clip: border-box;
-  }
-/* END SECOND PAGE */
-
-
-
-
-
-/* START THIRD PAGE WAIL EN Zani */
-.thirdPage {
-  height: 100vh;
-  height: fit-content;
-  margin-top: 5em;
-}
-
- .thirdPage h2 {
-  position: absolute;
-  background: rgba(255, 0, 0, 0.904);
-  padding: 10px;
-  margin-right: 2em;
-  font-size: 30pt;
-  font-weight: 700;
-  text-align: left;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-	transform: scale(1);
-  animation: pulse 2s infinite;
+/* MEDIA QUERIES */
+@media screen and (min-width: 480px) {
   
 }
+@media screen and (min-width: 768px) {
+  .ipo-container {
+    display: flex;
+  }
 
-@keyframes pulse {
-	0% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-	}
+  .ipo-tekst {
+    margin-right: 3em;
+  }
 
-	70% {
-		transform: scale(1);
-		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-	}
+  .margin-left {
+    margin-left: 4em;
+    margin-right: 0;
+  }
 
-	100% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-	}
+  .doelen-container {
+    display: flex;
+   }
+
+   .cards {
+    display: flex;
+    margin: 4em 2em;
+  }
+
+  /* .card {
+    border-right: 10px white solid;
+  } */
+
+  .ehb-container {
+    display: flex;
+  }
+
+  .ehb-tekst {
+    margin-left: 4em;
+  }
+
+  .vub-container {
+    display: flex;
+  }
+
+  .vub-tekst {
+    margin-right: 4em;
+  }
+
+  .ehb-foto {
+    flex: 50%;
+    max-width: 350px;
+  }
+
+  .vub-foto {
+    flex: 50;
+    max-width: 350px;
+  }
+  
+  .ehb-tekst {
+    flex: 50%;
+    margin-bottom: 2em;
+    max-width: 550px;
+    text-align: start;
+    margin-top: 1.5em;
+  }
 }
 
+@media screen and (min-width: 1024px) {
+  .homePage {
+    height: 80vh;
+    background: rgb(255, 255, 255);
+  }
+  
+  video {
+    width: 100%;
+    height: 80%;
+    margin-top: 10em;
+  }
 
-/* .fases {
-  position: sticky;
-  top: 0;
-} */
+  .ehb-gif {
+    opacity: 100%;
+  }
 
-.fotoFase1 {
-  width: fit-content;
-  margin: 2em;
-  text-align: center;
+  .wrapper {
+    margin: 10em;
+  }
+
+  .wrapper-partner {
+    margin-right: 15em;
+    margin-left: 15em;
+  }
+
+  hr {
+    margin-top: 7em;
+  }
+
+  .hr-margin-fases {
+    margin-top: 4em;
+  }
+
+  .ipo-tekst h2 {
+    margin: 1em 0;
+    font-size: 50px;
+  }
+
+  .red-block {
+    padding: 3em;
+  }
+  
+  .red-block h2 {
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+  }
+
+  .cards {
+    margin: 4em 8em;
+  }
+
+  .partners h2 {
+    margin-bottom: 3em;
+  }
+}
+/* END MEDIA QUERIES */
+
+/* FASES 3 CARDS*/
+
+
+.cards {
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+  height: fit-content;
 }
 
-.fotoFase1 img {
-  width: 80%;
+.card {
+  height: 250px;
+  border-radius: 2em;
 }
 
-.fotoFase1 p {
-  position: relative;
-  left: 100px;
-  bottom: 30px;
-  font-weight: 700;
+.card-body p {
+  margin-top: 3em;
 }
 
-.tweedeFoto {
-  width: 100%;
+.cards p {
+	text-align: center;
+  font-weight: bold;
 }
 
-.tweedeParagraaf {
-  color: white;
-  position: relative;
-  left: 150px;
+.cards .card {
+	max-width: 21rem;
+	margin-right: auto;
+	margin-bottom: 4rem;
+	margin-left: auto;
+	padding: 3rem 1.625rem 1.75rem 1.625rem;
+	text-align: center;
 }
 
-.derdeParagraaf {
-  color: white;
+.cards .card {
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
 }
 
-.derdeFoto {
-  width: 100%;
+.card:hover {
+  cursor: pointer;
 }
 
+.cards .card {
+  transition: 0.5s;
+}
 
+.cards .card-image {
+	width: 6rem;
+	height: 6rem;
+	margin-right: auto;
+	margin-bottom: 1.5rem;
+	margin-left: auto;
+	border-radius: 50%;
+  border: 2px black solid;
+	background-color: white;
+}
+
+.cards .fas {
+	color: #ff0000;
+	font-size: 3rem;
+	line-height: 6rem;
+}
+
+.cards .card-body {
+	padding: 0;
+}
+
+.card-title {
+	margin-top: 2rem;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.hr-wrapper {
+  margin: 0 10em;
+}
+
+.ehb-gif {
+  position: absolute;
+  left: 70px;
+  height: 800px;
+}
+
+.vub-gif {
+  position: absolute;
+  right: 70px;
+  height: 800px;
+}
 
 /* END THIRD PAGE */
 
-
-
-/* SCHEMA SETH */
-.schemaPage {
-  background-color: rgb(255, 81, 0);
-  height: 30vh;
+/* Back to top Button */
+#myBtn {
+  display: none;
+  position: fixed;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  z-index: 99;
+  font-size: 22px;
+  border: none;
+  background-image: linear-gradient(red, white);
+  color: white;
+  cursor: pointer;
+  padding: 12px 15px;
+  border-radius: 100%;
 }
 
-@media screen and (min-width: 480px) {
-  /* FASE I */
-  .thirdPage h2 {
-    position: absolute;
-    background: rgba(255, 0, 0, 0.904);
-    padding: 30px;
-    margin-right: 2em;
-    font-size: 50pt;
-    font-weight: 700;
-    text-align: left;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  .ipo-text p {
-    margin: 0 auto;
-    width: 500px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  /* FASE I */
-  .thirdPage h2 {
-    position: absolute;
-    background: rgba(255, 0, 0, 0.904);
-    padding: 50px;
-    margin-right: 2em;
-    font-size: 60pt;
-    font-weight: 700;
-    text-align: left;
-  }
-
-  .fotoFase1 img {
-    width: 60%;
-
-  }
-  
-  .fotoFase1 p {
-    position: relative;
-    left: 200px;
-    bottom: 60px;
-    font-size: 1.5em;
-    font-weight: 700;
-  }
-
-  
-/* images WAT IS IPO */
-  .womans img {
-    height: fit-content;
-    object-fit: none;
-    border-radius: 0;
-  }
-
-
-  .woman3 {
-    flex: 1;
-  }
-
-  .woman2 {
-    flex: 1;
-  }
-  .woman1 img {
-  width: fit-content;
-   max-width: 500px;
-
-  }
-  .woman2 img, .woman3 img {
-  width: fit-content;
-   max-width: 500px;
-  }
-
-  .womans div {
-    margin: 0;
-  }
-
-  .twoPics{
-    display: flex;
-    align-items: center;
-  }
-  
-  .womans {
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
-  }
-  
-  .womans div {
-    margin: 1em;
-  }
-
-}
-
-/* SETH SCHEMA */
-/* Some positioning and ratios */
-.sticky-container-ehb {
-  max-width: 270px;
-  position: relative;
-  margin-left: 25%;
-  margin-top: 15%;
-}
-
-.sticky-container-vub {
-  max-width: 270px;
-  position: relative;
-  margin-left: 75%;
-  margin-top: 15%;
-}
-
-.sticky-outer {
-  display: flex;
-  padding-top: 92.5925926%;
-  position: relative;
-  transform: translate(-50%, -50%);
-  width: 100%;
-}
-
-.sticky-ehb {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.sticky-vub {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.sticky-ehb:before {
-  box-shadow: -2px 2px 15px 0 rgba(0, 0, 0, 0.5);
-  background-color: rgba(0, 0, 0, 0.25);
-  content: '';
-  width: 90%;
-  left: 5px;
-  height: 83%;
-  position: absolute;
-  top: 30%;
-  transform: rotate(-5deg);
-}
-
-.sticky-vub:before {
-  box-shadow: -2px 2px 15px 0 rgba(0, 0, 0, 0.5);
-  background-color: rgba(0, 0, 0, 0.25);
-  content: '';
-  width: 90%;
-  left: 5px;
-  height: 83%;
-  position: absolute;
-  top: 30%;
-  transform: rotate(5deg);
-}
-
-.sticky-vub:before:hover {
-  transform: rotate(-5deg);
-}
-
-.sticky-content-ehb {
-  background: linear-gradient(180deg,
-      rgb(255, 187, 187) 0%,
-      rgb(255, 187, 187) 12%,
-      rgb(241, 170, 176) 75%,
-      rgb(247, 190, 190) 100%);
-  width: 100%;
-  height: 100%;
-  padding-top: 10%;
-  padding-left: 10%;
-  font-size: 1.5rem;
-  transform: rotate(-5deg);
-  clip-path: url(#stickyClip);
-}
-
-/* .sticky-content-ehb:hover {
-  transform: scale(1, 1);
-} */
-
-
-.sticky-content-vub {
-  background: linear-gradient(180deg,
-      rgb(187, 208, 255) 0%,
-      rgb(187, 214, 255) 12%,
-      rgb(170, 186, 241) 75%,
-      rgb(190, 213, 247) 100%);
-  width: 100%;
-  height: 100%;
-  padding-top: 10%;
-  padding-left: 10%;
-  transform: rotate(5deg);
-  font-size: 1.5rem;
-
-  clip-path: url(#stickyClip);
-}
-
-
-.betrokken-leertrajecten {
-  font-size: 0.98rem;
-}
-
-.spin {
-  text-align: center;
-  font-weight: bold;
-  font-size: 50pt;
-  color: red;
-  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2)
-}
-
-@media screen and (min-width: 640px) {
-  .sticky:before {
-    height: 79%;
-    width: 90%;
-
-  }
-
-  .sticky-content {
-    font-size: 1.25rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .sticky:before {
-    height: 75%;
-    width: 90%;
-  }
-
-  .sticky-content {
-    font-size: 1.5rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .sticky:before {
-    height: 73%;
-    width: 90%;
-  }
-
-  .sticky-content {
-    font-size: 1.875rem;
-  }
+#myBtn:hover {
+  background-image: linear-gradient(red, red);
 }
