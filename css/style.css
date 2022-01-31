@@ -8,8 +8,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-/* background */
-
 html {
   height:100%;
 }
@@ -18,13 +16,118 @@ body {
   margin:0;
 }
 
+section {
+  position: relative;
+}
+
+#home {
+  position: absolute;
+  top: 0;
+}
+
+/* background */
+/* IPO inleiding background */
+.home-animation {
+  position: relative;
+  bottom: 200px;
+  width: 80%;
+}
+
+.home-title {
+  position: absolute;
+  top: 0em;
+  color: white;
+  opacity: 50%;
+  font-weight: bolder;
+  font-size: 130px;
+  line-height: 2.2em;
+}
+
+.effect {
+  color: #e7e6e6;
+
+}
+
+section.homePage {
+  position: relative;
+  text-align: center;
+  background-color: #DC143C;
+  margin-top: 4em;
+  height: 90vh;
+}
+/* SHAPE DIVIDER */
+.custom-shape-divider-bottom-1643461390 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1643461390 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-bottom-1643461390 .shape-fill {
+  fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1643461390 svg {
+      width: calc(100% + 1.3px);
+      height: 50px;
+  }
+}
+
+/* SHAPE DIVIDER 2*/
+.custom-shape-divider-bottom-1643461391 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  
+}
+
+.custom-shape-divider-bottom-1643461391 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-bottom-1643461391 .shape-fill {
+  fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1643461391 svg {
+      width: calc(100% + 1.3px);
+      height: 50px;
+  }
+}
+
+.section-divider2 {
+  background-color: #DC143C;
+  height: 400px;
+}
+
+
+/* FASES background */
 .area{
   background: #ffffff;  
   background: -webkit-linear-gradient(to left, #8f94fb, #202ae9);  
   width: 100%;
-  height:90vh;
+  height:85vh;
   position: absolute;
- 
 }
 
 .circles{
@@ -124,8 +227,6 @@ body {
   animation-duration: 11s;
 }
 
-
-
 @keyframes animate {
 
   0%{
@@ -141,7 +242,9 @@ body {
   }
 
 }
+/* End fases background */
 
+/* general */
 .red {
   color: red;
 }
@@ -163,6 +266,7 @@ body {
   margin: 3em;
 }
 
+/* nav */
 .topnav {
   display: flex;
   height: 4em;
@@ -191,7 +295,6 @@ body {
 }
 
 .logo {
-  position: absolute;
   margin-top: -55px;
   margin-left: 35px;
   z-index: 99;
@@ -200,17 +303,14 @@ body {
 
 .logo img {
   width: 3em;
-  margin-top: 4em;
 }
-
 /* END NAVIGATION */
+
+/* HOME */
 .homePage {
   height: 80vh;
 }
-
-/* HOME */
 /* POSITIONERING ANIMATIE HIER */
-
 video {
   position: absolute;
   top: 0px;
@@ -276,6 +376,7 @@ hr {
   list-style: url("https://img.icons8.com/ios-filled/25/000000/goal--v1.png");
   list-style-position: inside;
 }
+/* End IPO */
 
 /* START PARTNERS */
 .partners {
@@ -291,7 +392,6 @@ hr {
 }
 
 /* EHB */
-
 .ehb-container {
   align-items: center;
 }
@@ -317,7 +417,6 @@ hr {
 }
 
 /* VUB */
-
 .vub-container {
   margin-top: 4em;
   align-items: center;
@@ -344,8 +443,6 @@ hr {
 }
 /* END PARTNERS */
 
-/* END of second page */
-
 /* RED-BLOCK leerlijn */
 .red-block {
   background-color: red;
@@ -358,10 +455,12 @@ hr {
   font-size: xx-large;
   font-weight: bolder;
 }
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 480px) {
   
 }
+
 @media screen and (min-width: 768px) {
   .ipo-container {
     display: flex;
@@ -422,12 +521,18 @@ hr {
     text-align: start;
     margin-top: 1.5em;
   }
+
+}
+
+@media screen and (max-width: 1024px) {
+  .ehb-gif, .vub-gif {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .homePage {
     height: 80vh;
-    background: rgb(255, 255, 255);
   }
   
   video {
@@ -577,7 +682,7 @@ hr {
 
 /* END THIRD PAGE */
 
-/* Partners deel 2 */
+/* Partners deel 2 (Opleidingen)*/
   .partners2 {
     text-align: center;
     height: 100vh;
