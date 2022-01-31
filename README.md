@@ -10,6 +10,10 @@ js/* -> javascript code
 js/* -> javascript directory
 
 
+
+
+
+<!-- 
 # Foobar
 
 Foobar is a Python library for dealing with word pluralization.
@@ -43,4 +47,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://choosealicense.com/licenses/mit/) -->
