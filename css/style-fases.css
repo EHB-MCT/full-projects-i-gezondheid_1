@@ -1,0 +1,272 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 0;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+
+    /* background: rgb(2, 0, 36); */
+    /* background: linear-gradient(90deg, rgb(245, 44, 44) 0%, rgb(247, 92, 92) 0%, rgb(252, 252, 252) 100%); */
+}
+
+
+.titel-fase1 h1 {
+
+    text-align: center;
+    font-size: 70pt;
+    font-weight: bold;
+
+}
+
+/* .topnav {
+    text-align: center;
+  } */
+
+
+/* .topnav ul {
+    margin: 0;
+    padding: 0;
+  } */
+
+
+
+.topnav a {
+    font-size: 14px;
+    text-decoration: none;
+    color: red;
+    margin: 0;
+    padding: 0;
+    margin-left: 30px;
+}
+
+.fase1 {
+    margin-bottom: 50px;
+    margin-top: 3em;
+    padding-top: 3em;
+}
+
+.fase1 p {
+    color: black;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container-fases {
+    padding: 50px;
+
+}
+
+img {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 10%;
+}
+
+.red {
+    font-weight: bold;
+    color: red
+}
+
+.text2 h2 {
+    border-top: 3px solid #e70000;
+
+}
+
+#fase-redirection {
+    font-size: 10px;
+    padding: 10px;
+    border: 1px solid #1e403b;
+    border-radius: 3px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(253, 71, 71);
+    margin-bottom: 10px;
+    position: fixed;
+    margin-left: 2em;
+    bottom: 0;
+    right: 50px;
+}
+
+
+@media (min-width: 950px) {
+
+    #fase2-body {
+        margin: 0;
+        font-family: 'Oxygen', sans-serif;
+        font-weight: 400;
+
+        /* background: rgb(2, 0, 36); */
+        /* background: linear-gradient(90deg, rgb(245, 44, 44) 0%, rgb(247, 92, 92) 0%, rgb(252, 252, 252) 100%); */
+    }
+
+    .topnav {
+        display: flex;
+        height: 4em;
+        justify-content: right;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 99;
+        overflow: hidden;
+    }
+
+
+    .topnav a {
+        display: flex;
+        color: red;
+        align-items: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        position: relative;
+        right: 3em;
+    }
+
+    .topnav a:hover {
+        background: rgba(0, 0, 0, 0.03);
+        color: black;
+    }
+
+    .logo {
+        position: absolute;
+        margin-top: -55px;
+        margin-left: 35px;
+        z-index: 99;
+        position: fixed;
+    }
+
+    .logo img {
+        width: 3em;
+    }
+
+
+    h1 {
+        font-size: 100pt;
+        color: black;
+        text-align: center;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+    }
+
+    .Fase1 {
+        flex: 1;
+        /* padding: 50px; */
+        padding: 50px;
+    }
+
+    .Fase1 p {
+        font-size: 15pt;
+        padding-bottom: 10px;
+        margin-bottom: 50px;
+        border-bottom: 5px solid #e70000;
+    }
+
+    .red2 {
+        color: white;
+        font-weight: bolder;
+    }
+
+
+    .red {
+        color: red;
+        font-weight: bolder;
+    }
+
+
+
+    .text2 {
+        margin-left: 50px;
+        padding-left: 50px;
+        margin-top: 95px;
+        /* background-color: yellow; */
+    }
+
+    .text2 h2 {
+
+        font-size: 15pt;
+
+        padding-top: 10px;
+        margin-top: 50px;
+        border-top: 5px solid #e70000;
+        ;
+    }
+
+    .text2 ul {
+
+        font-size: 15pt;
+        font-weight: 400;
+    }
+
+
+    h1 {
+        font-size: 100pt;
+        color: black;
+        text-align: center;
+
+
+    }
+
+    #visueleondersteuning {
+
+        margin: 50px;
+        margin-left: 350px;
+
+    }
+
+    #visueleondersteuning2 {
+        margin-bottom: 50px;
+        margin-left: 250px;
+
+
+    }
+
+    #visueleondersteuning-fase3 {
+        position: relative;
+        margin: 50px;
+        margin-left: 520px;
+
+
+    }
+
+
+    #fase-redirection {
+        font-size: 17px;
+        padding: 15px;
+        border: 1px solid #1e403b;
+        border-radius: 3px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        background-color: rgb(253, 71, 71);
+        margin-bottom: 10px;
+        position: fixed;
+        margin-left: 2em;
+        bottom: 0;
+        right: 50px;
+    }
+
+    #fase-redirection2 {
+        font-size: 17px;
+        padding: 15px;
+        border: 1px solid #1e403b;
+        border-radius: 3px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        background-color: rgb(253, 71, 71);
+        margin-bottom: 10px;
+        position: fixed;
+        margin-left: 2em;
+        bottom: 0;
+
+    }
+}
