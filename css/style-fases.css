@@ -13,6 +13,10 @@ body {
     /* background: linear-gradient(90deg, rgb(245, 44, 44) 0%, rgb(247, 92, 92) 0%, rgb(252, 252, 252) 100%); */
 }
 
+* {
+    box-sizing: border-box;
+}
+
 
 .titel-fase1 h1 {
 
@@ -84,11 +88,11 @@ body {
 
 }
 
-img {
+/* img {
     margin-left: 20px;
     margin-top: 20px;
     width: 10%;
-}
+} */
 
 .red {
     font-weight: bold;
@@ -134,35 +138,105 @@ img {
 
 
 /* TEST BACKGROUND FASE 1 VANAF 420PX NIET MINDER! */
-#img-fase1 {
+/* #img-fase1 {
     position: absolute;
     width: 45%;
     margin: 0 auto;
     margin-left: 35%;
     margin-top: 5em;
-}
+} */
 
 
 /* FASE 2 EN FASE 3 */
 
 img {
 
-    width: 100%;
-    margin: 0 auto;
+    /* width: 100%;
+    margin: 0 auto; */
     /* margin-left: 70%;
     margin-top: 3em; */
 }
+/* 
+#img-fase1 {
+    margin: 0 auto;
+    width: 100%;
 
+
+
+} */
+
+
+img {
+    margin: 0 auto;
+    width: 100%;
+
+
+
+}
 
 /* EINDE MOBIEL VERSIE */
 
 
 
 
-/* NOG NIET AANGEPAST!!! */
-@media (min-width: 600px) {
+/* NOG NIET klaar!!! */
+@media (min-width: 750px) {
+
     .container-fase1 {
+
         display: flex;
+        flex-direction: row;
+    }
+
+    .container-fase1 .container-voor-img {
+        order: 2;
+        
+        padding-right: 30px;
+        padding-left: 150px;
+        /* position: relative;
+        display: flex;
+        flex-direction: column; */
+        /* order: 1; */
+        /* flex: 2;
+        z-index: 1;
+        background-color: #f5f5f5; */
+        /* padding: 30px; */
+    }
+
+    .container-fase1 .container-voor-img {
+        min-width: 480px;
+        
+        padding: 30px;
+        left: 2em;
+        /* padding-right: 150px; */
+        margin-right: 0;
+        /* position: relative;
+        display: flex;
+        flex-direction: column; */
+        /* order: 1; */
+        /* flex: 2;
+        z-index: 1;
+        background-color: #f5f5f5; */
+        /* padding: 30px; */
+    }
+
+    #img-fase1 {
+        position: relative;
+        height: auto;
+        max-width: 165%;
+        vertical-align: middle;
+        size: 55.3vw;
+        top: 28%;
+        right: 55px;
+
+
+
+
+    }
+
+    figure {
+
+        margin: 0 auto;
     }
 
     img {
@@ -170,6 +244,15 @@ img {
         margin: 0 auto;
     }
 }
+
+
+/* img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    size: 33vmax;
+} */
+
 
 /* NOG NIET AANGEPAST!!! */
 @media (min-width: 950px) {
