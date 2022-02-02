@@ -14,7 +14,7 @@ copy-paste deze link voor echte website
 
 
 
-[click] (https://ehb-mct.github.io/full-projects-i-gezondheid_1/static/)
+[click here](https://ehb-mct.github.io/full-projects-i-gezondheid_1/static/) to see website
 
 https://ehb-mct.github.io/full-projects-i-gezondheid_1/static/
 
