@@ -10,6 +10,9 @@ js/* -> javascript code
 js/* -> javascript directory
 
 
+copy-paste deze link voor echte website
+
+https://ehb-mct.github.io/full-projects-i-gezondheid_1/static/
 
 
 
