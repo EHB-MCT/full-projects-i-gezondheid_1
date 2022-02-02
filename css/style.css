@@ -45,7 +45,6 @@ section {
 
 .effect {
   color: #e7e6e6;
-
 }
 
 section.homePage {
@@ -456,6 +455,11 @@ hr {
   font-weight: bolder;
 }
 
+.hr-margin-fases {
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 480px) {
   
@@ -680,6 +684,25 @@ hr {
   height: 800px;
 }
 
+.partners .h2-partners {
+  margin: 1em 0;
+  font-size:x-large;
+}
+
+.deco {
+  position: absolute;
+  top: -100px;
+  z-index: -1;
+  opacity: 30%;
+}
+
+.deco2 {
+  position: absolute;
+  bottom: 400px;
+  left: 20em;
+  z-index: -1;
+  opacity: 30%;
+}
 /* END THIRD PAGE */
 
 /* Partners deel 2 (Opleidingen)*/
@@ -734,6 +757,85 @@ hr {
     vertical-align: middle;
   }
 /* END Partners 2 */
+
+/* FOOTER */
+/* SOCIALS */
+/* .socials .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.socials .fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+
+  color: white;
+} */
+
+.socials-footer {
+  background-color: whitesmoke;
+	text-align: center;
+	margin: 10px 0;
+	padding: 10px 0;
+  height: fit-content;
+}
+
+.socials-wrapper {
+	text-align: center;
+}
+
+.socials-wrapper ul li {
+	display: inline;
+	margin: 0 5px;
+}
+/* social icons */
+.socials-footer .fa {
+  padding: 15px;
+  font-size: 25px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 5px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+
+  color: white;
+}
+
+.socials-footer .fa:hover {
+  opacity: 0.7;
+}
+
+.footer-nav p {
+	text-align: center;
+}
 
 /* Back to top Button */
 #myBtn {
