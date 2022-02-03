@@ -10,19 +10,41 @@ js/* -> javascript code
 js/* -> javascript directory
 
 
+## TEST README = 
+
+
+[KLIK HIER](https://ehb-mct.github.io/full-projects-i-gezondheid_1/static/) voor website te zien
+
+of  copy-paste deze link:
+
+https://ehb-mct.github.io/full-projects-i-gezondheid_1/static/
 
 
 
-<!-- 
-# Foobar
 
-Foobar is a Python library for dealing with word pluralization.
+<!-- # Foobar
 
-## Installation
+Foobar is a Python library for dealing with word pluralization. -->
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
-```bash
+
+# Team
+
+Zani Dobruna, Wail El Majdoubi, Nawfal Adahchour, Thomas Mpiana, Abdella Boutaarourt, Seth De Preter
+
+# Buttons
+
+
+Wanneer u op een van de 4 navigatie-button klikt zal u naar deze terecht komen. 
+Wanneer u op één van de 3 fases klikt zal u naar de uitbreiding van deze fase terecht komen.
+
+
+# Formulier
+
+De ontvanger van de vragen is momenteel Zani Dobruna. Dit moet aangepast worden naar jullie mail.
+
+
+<!-- ```bash
 pip install foobar
 ```
 
@@ -47,4 +69,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/) -->
+[MIT](https://choosealicense.com/licenses/mit/) --> 
