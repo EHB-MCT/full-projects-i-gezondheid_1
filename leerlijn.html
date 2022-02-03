@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="img/Logo.png">
-    <link rel="stylesheet" href="leerlijn.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Leerlijn</title>
 </head>
 <body>
     <!-- NAVIGATION -->
   <span id="home"></span>
-  <div class="logo"><a href="index.html"><img src="img/Logo.png"></a>
+  <div class="logo"><a href="#home"><img src="img/Logo.png" alt="logo"></a>
   </div>
   <nav>
     <div class="topnav" id="myTopnav">
@@ -21,6 +21,17 @@
       <a href="#partners">Partners</a>
     </div>
   </nav>
+  <!-- Overlay mobile navigation - Hamburger menu -->
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#home" onclick="closeNav()">Home</a>
+      <a href="#IPO" onclick="closeNav()">IPO</a>
+      <a href="#leerlijn" onclick="closeNav()">Leerlijn</a>
+      <a href="#partners" onclick="closeNav()">Partners</a>
+    </div>
+  </div>
+  <span onclick="openNav()" class="hamburger2">&#9776;</span>
   <!-- END NAVIGATION -->
 <div class="home-picture">
     <figure>
@@ -52,8 +63,8 @@
             <div class="container-wrapper">
                 <div class="inner">
                     <div class="introduction-fase">
-                        <h1>titel</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quos commodi sapiente non mollitia dicta quas quia pariatur asperiores est odio distinctio rerum voluptates ad nisi totam, laboriosam et qui.</p>
+                        <h1>Waarom?</h1>
+                        <p>Aan de hand van deze leerlijn leer je interprofessioneel samenwerken met andere collega's uit verschillende opleidingen, waar je potentieel in de toekomst mee zal moeten werken. Hieronder vind je een overzicht van de fases met elk een project(en).</p>
                     </div>
                     <div class="content-fase">
                         <div class="content-tekst">
@@ -126,5 +137,6 @@
             </div>
         </div>
     </div>
+    <script src="js/index.js"></script>
 </body>
 </html>

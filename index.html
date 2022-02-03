@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>IPO</title>
   <link rel="icon" type="image/x-icon" href="img/Logo.png">
   <link href="css/reset.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
@@ -16,7 +16,7 @@
 <body>
   <!-- NAVIGATION -->
   <span id="home"></span>
-  <div class="logo"><a href="index.html"><img src="img/Logo.png"></a>
+  <div class="logo"><a href="#home"><img src="img/Logo.png" alt="logo"></a>
   </div>
   <nav>
     <div class="topnav" id="myTopnav">
@@ -26,12 +26,31 @@
       <a href="#partners">Partners</a>
     </div>
   </nav>
+  <!-- Overlay mobile navigation - Hamburger menu -->
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#home" onclick="closeNav()">Home</a>
+      <a href="#IPO" onclick="closeNav()">IPO</a>
+      <a href="#leerlijn" onclick="closeNav()">Leerlijn</a>
+      <a href="#partners" onclick="closeNav()">Partners</a>
+    </div>
+  </div>
+  <span onclick="openNav()" class="hamburger">&#9776;</span>
   <!-- END NAVIGATION -->
 
   <!-- START HOMEPAGE ZANI en WAIL -->
+  
   <section class="homePage">
-
-    <svg id="visual" viewBox="0 0 960 540" width="1080" height="540" xmlns="http://www.w3.org/2000/svg"
+    <img src="/img/logo.png" alt="logo" class="static-logo">
+<div class="video-animation">
+  <!-- <video autoplay>
+    <source src="/Home-Animation-Transparant100kb.m4v" type="video/mp4">
+  </video> -->
+  <!-- <img src="img/Home-Animation.gif" alt="logo animation"> -->
+</div>
+  <div class="blob-div">
+    <svg class="blob" id="visual" viewBox="0 0 960 540" width="1080" height="540" xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
       <g transform="translate(447.8299336819108 288.9238075637941)">
         <path id="blob1"
@@ -45,6 +64,8 @@
           fill="#FFFFFF"></path>
       </g>
     </svg>
+  </div>
+
     <div class="custom-shape-divider-bottom-1643461390">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
@@ -67,8 +88,13 @@
               examen leren met de bedoeling om <span class="red">samenwerking
                 en kwaliteit</span> van zorg te verbeteren.</p>
           </div>
-          <div class="ipo-foto">
-            <img src="img/Teamwork (1).png">
+          <div class="ipo-foto ipo-foto-hover">
+            <img src="img/Teamwork.png" class="image-teamwork" alt="Wat is IPO">
+            <div class="button">
+              <a href="https://www.vub.be/pers/persberichten/interprofessioneel-medisch-onderwijs-zorgt-voor-positievere-attitude-van" target="_blank">
+                <div class="button-text">Meer over IPO</div>
+              </a>
+            </div>
           </div>
         </div>
         <hr>
@@ -84,34 +110,46 @@
             </ul>
           </div>
           <div class="ipo-foto">
-            <img src="img/training-effectief-samenwerken.jpg" class="radius-foto">
+            <img src="img/training-effectief-samenwerken.jpg" class="radius-foto" alt="Doelen">
           </div>
         </div>
       </div>
       <svg id="visual" class="deco2" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g><g transform="translate(819 444)"><path d="M0 -70L70 0L0 70L-70 0Z" fill="#e5e5e5"></path></g><g transform="translate(793 127)"><path d="M0 -52L52 0L0 52L-52 0Z" fill="#e5e5e5"></path></g><g transform="translate(339 426)"><path d="M0 -49L49 0L0 49L-49 0Z" fill="#e5e5e5"></path></g></g></svg>
 
     </div>
-    <section class="section-divider2">
-      <div class="custom-shape-divider-top-1643811488">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-        </svg>
-    </div>
-    </section>
+    
   </section>
   <!-- END of second page -->
   <!-- Red stroke -->
+  
   <div class="red-block" id="leerlijn">
+    
     <div class="leerlijn-titel">
       <h2>Leerlijn</h2>
     </div>
+    
   </div>
+ 
   <!-- End red stroke -->
 
   <!-- THIRD PAGE -->
+  <section>
+
   <div class="area">
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <div class="area3">
     <ul class="circles">
       <li></li>
       <li></li>
@@ -128,6 +166,7 @@
 
   <div class="cards">
     <!-- Card -->
+    <a href="leerlijn.html" class="card-links">
       <div class="card">
         <div class="card-image">
           <i class="fas fa-comments"></i>
@@ -137,9 +176,11 @@
           <p>Interprofessionele <span class="red">kennismaking</span> & basisvaardigheden</p>
         </div>
       </div>
+    </a>
     <!-- end of card -->
 
     <!-- Card -->
+    <a href="leerlijn.html" class="card-links">
       <div class="card">
         <div class="card-image">
           <i class="fas fa-handshake"></i>
@@ -149,9 +190,11 @@
           <p>Interprofessionele <span class="red">zorgtaken</span> in simulatiesetting</p>
         </div>
       </div>
+    </a>
     <!-- end of card -->
 
     <!-- Card -->
+    <a href="leerlijn.html" class="card-links">
       <div class="card">
         <div class="card-image">
           <i class="fas fa-stethoscope"></i>
@@ -161,23 +204,26 @@
           <p>Interprofessionele <span class="red">zorg</span> op de <span class="red">werkvloer</span></p>
         </div>
       </div>
+    </a>
     <!-- end of card -->
 
   </div>
+</section>
     <hr class="hr-margin-fases">
   
   <!-- end of cards -->
   <!-- END THIRD PAGE -->
 
   <!-- START PARTNERS -->
+  <section>
   <div class="partners" id="partners">
-    <img src="img/EHB-50fps.gif" class="ehb-gif">
-    <img src="img/VUB-50fps.gif" class="vub-gif">
+    <img src="img/EHB-50fps.gif" class="ehb-gif" alt="gif EHB animatie">
+    <img src="img/VUB-50fps.gif" class="vub-gif" alt="gif VUB animatie">
     <div class="wrapper wrapper-partner">
       <h2>Samenwerkingspartners</h2>
       <div class="ehb-container">
         <div class="ehb-foto">
-          <img src="img/ehb schoolfoto.jpg" class="radius-foto">
+          <img src="img/ehb schoolfoto.jpg" class="radius-foto" alt="EHB CAMPUS">
         </div>
         <div class="ehb-tekst">
           <h2 class="h2-partners">UAB</h2>
@@ -193,7 +239,7 @@
       </div>
       <div class="vub-container">
         <div class="vub-foto">
-          <img src="img/VUB campus.jpg" class="radius-foto">
+          <img src="img/VUB campus.jpg" class="radius-foto" alt="VUB school">
         </div>
         <div class="vub-tekst">
           <h2 class="h2-partners">Werkvloer</h2>
@@ -206,18 +252,37 @@
     </div>
   </div>
 <!-- schema opleidingen -->
-<section class="section-opleidingen">
+  <section class="section-opleidingen">
 
-  <div class="schema-opleidingen">
-    <img src="img/opleidingen-schema.jpg" alt="opleidingen">
-  </div>
-  
+    <div class="schema-opleidingen">
+      <img src="img/opleidingen-schema.jpg" alt="opleidingen" class="schema-opledingen-image">
+    </div>
+    
+  </section>
 </section>
   <!-- END PARTNERS -->
-<div class="container-formulier">
+<section>
+  
+  <div class="area2">
+    <ul class="circles2">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+
+<div class="form-wrapper">
+  <div class="container-formulier">
 
     <form action="https://formsubmit.co/zanidobruna@hotmail.com" method="POST">
-
+      <input type="hidden" name="_template" value="box">
 
 
       <label for="vnaam">Voornaam</label>
@@ -226,11 +291,13 @@
 
 
 
-      <label for=" naam">Naam</label>
+      <label for="naam">Naam</label>
 
       <input type="text" id="lname" name="lastname" placeholder="Uw naam..">
 
+      <label for="email">Email</label>
 
+      <input type="email" name="email" placeholder="Uw e-mailadres">
 
       <label for=" vraag">Vraag</label>
 
@@ -245,6 +312,8 @@
     </form>
 
   </div>
+</div>
+</section>
   <!-- FOOTER -->
   <!-- SOCIALS -->
   <footer class="socials-footer">
@@ -263,15 +332,16 @@
     </div>
   
     <nav class="footer-nav" role="navigation">
-      <p>Copyright &copy; 2022-IPO. All rights reserved.</p>
+      <p>Copyright &copy; 2022 - IPO. All rights reserved.</p>
     </nav>
   </footer>
 
   <!-- Back to top button -->
   <button onclick="topFunction()" id="myBtn" title="Go to top" <i class="fas fa-angle-double-up"></i></button>
 
+  <script src="js/lottie.js"></script>
   <script src="js/index.js"></script>
-  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script type="text/javascript" src="js/vanilla-tilt.js"></script>
   <script>
     VanillaTilt.init(document.querySelectorAll(".card"), {
       max: 15,
