@@ -10,9 +10,6 @@ js/* -> javascript code
 js/* -> javascript directory
 
 
-## TEST README = 
-
-
 [KLIK HIER](https://ehb-mct.github.io/full-projects-i-gezondheid_1/static/) voor website te zien
 
 of  copy-paste deze link:
@@ -22,20 +19,15 @@ https://ehb-mct.github.io/full-projects-i-gezondheid_1/static/
 
 
 
-<!-- # Foobar
-
-Foobar is a Python library for dealing with word pluralization. -->
-
-
 
 # Team
 
-Zani Dobruna, Wail El Majdoubi, Nawfal Adahchour, Thomas Mpiana, Abdella Boutaarourt, Seth De Preter
+Zani Dobruna, Wail El Majdoubi, Nawfal Adahchour, Thomas Mpiana, Abdella Boutaarourt, Seth De Preter.
+
 
 # Buttons
 
-
-Wanneer u op een van de 4 navigatie-button klikt zal u naar deze terecht komen. 
+Wanneer u op een van de 4 navigatie-button (Home, IPO, leerlijn) klikt zal u naar deze terecht komen. 
 Wanneer u op één van de 3 fases klikt zal u naar de uitbreiding van deze fase terecht komen.
 
 
@@ -44,29 +36,3 @@ Wanneer u op één van de 3 fases klikt zal u naar de uitbreiding van deze fase 
 De ontvanger van de vragen is momenteel Zani Dobruna. Dit moet aangepast worden naar jullie mail.
 
 
-<!-- ```bash
-pip install foobar
-```
-
-## Usage
-
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/) --> 
