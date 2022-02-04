@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="img/Logo.png">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/9ab47f940e.js" crossorigin="anonymous"></script>
     <title>Leerlijn</title>
 </head>
 <body>
@@ -15,10 +16,10 @@
   </div>
   <nav>
     <div class="topnav" id="myTopnav">
-      <a href="#home">Home</a>
-      <a href="#IPO">IPO</a>
-      <a href="#leerlijn">Leerlijn</a>
-      <a href="#partners">Partners</a>
+      <a href="index.html#home">Home</a>
+      <a href="index.html#IPO">IPO</a>
+      <a href="index.html#leerlijn">Leerlijn</a>
+      <a href="index.html#partners">Partners</a>
     </div>
   </nav>
   <!-- Overlay mobile navigation - Hamburger menu -->
@@ -50,10 +51,31 @@
                         <div class="left-container">
                             <div class="left-links">
                                 <ul>
-                                    <li><a href=""></a></li>
-                                    <li><a href=""></a></li>
-                                    <li><a href=""></a></li>
+                                    <div class="fase-container-link">
+                                        <a href="#fase2">Fase II <i class="fas fa-chevron-right"></i></a>
+                                    </div>
+                                    <div class="fase-container-link">
+                                        <a href="#fase3">Fase III <i class="fas fa-chevron-right"></i></a>
+                                    </div>
                                 </ul>
+                            </div>
+
+                            <div class="foto-left">
+                                <a href="https://www.wekonektweek.brussels/nl/">
+                                    <img src="svg/logo-wekonekt.svg" alt="logo-wekonekt">
+                                </a>
+                            </div>
+                            <div class="foto-left2">
+                                <blockquote>
+                                    <p><span class="weight">"Als iedereen samen vooruitgaat, dan komt succes vanzelf"</span> <br>
+— <br> Henry Ford, Amerikaans industrieel en oprichter van de Ford Motor Company.
+
+
+                                    </p>
+                                </blockquote>
+                            </div>
+                            <div class="foto-left3">
+                                    <img src="img/depositphotos_65344811-stock-illustration-internship.png" alt="internship">
                             </div>
                         </div>
                     </div>
@@ -68,7 +90,7 @@
                     </div>
                     <div class="content-fase">
                         <div class="content-tekst">
-                            <h2>Fase I</h2>
+                            <h2 id="fase1">Fase I</h2>
                             <p> In fase 1 is het de bedoeling dat de studenten <span class="red">kennismaken</span> met de
                                 eigen maar ook met anderen disciplines binnen de gezondheidszorg. Dit gebeurd aan de hand
                                 van
@@ -94,7 +116,7 @@
                 <div class="inner">
                     <div class="content-fase2">
                         <div class="content-tekst">
-                            <h2>Fase II</h2>
+                            <h2 id="fase2">Fase II</h2>
                             <p> In fase 2 gaan studenten <span class="red"> zorgtaken </span>op een interprofessionele manier
                                 benaderen en uitwerken, maar in een simulatiesetting. Dit wil
                                 zeggen dat de studenten in meerdere opleidingsbrede projecten met
@@ -117,7 +139,7 @@
                 <div class="inner">
                     <div class="content-fase">
                         <div class="content-tekst">
-                            <h2>Fase III</h2>
+                            <h2 id="fase3">Fase III</h2>
                             <p>In fase 3 moet de student op de <span class="red"> werkvloer</span> zelf intensief
                                 interprofessioneel samenwerken. Dit gebeurd aan de hand van
                                 <span class="red">stages</span> en opdrachten die dienen uitgevoerd worden op de
@@ -137,6 +159,55 @@
             </div>
         </div>
     </div>
+    <!-- FOOTER -->
+  <!-- SOCIALS -->
+  <footer class="socials-footer">
+    <div class="socials-wrapper">
+      <ul>
+        <li>
+          <a href="#" class="fa fa-facebook" target="_blank"></a>
+        </li>
+        <li>
+          <a href="#" class="fa fa-twitter" target="_blank"></a>
+        </li>
+        <li>
+          <a href="#" class="fa fa-instagram" target="_blank"></a>
+        </li>
+      </ul>
+    </div>
+  
+    <nav class="footer-nav" role="navigation">
+      <p>Copyright &copy; 2022 - IPO. All rights reserved.</p>
+    </nav>
+  </footer>
+    <!-- Back to top button -->
+  <button onclick="topFunction()" id="myBtn2" title="Go to top" <i class="fas fa-angle-double-up"></i></button>
+
     <script src="js/index.js"></script>
+    <script>
+     ///////////////////////////
+    // Go back to top BUTTON //
+    ///////////////////////////
+    //Get the button
+    var mybutton = document.getElementById("myBtn2");
+    // When the user scrolls down 200px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
 </body>
 </html>

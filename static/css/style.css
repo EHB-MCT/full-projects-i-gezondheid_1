@@ -138,8 +138,8 @@ section {
   top: 17px;
   right: 1em;
   z-index: 101;
-  font-size:30px;
-  cursor:pointer
+  font-size: 30px;
+  cursor: pointer;
 }
 
 .hamburger2 {
@@ -148,8 +148,8 @@ section {
   top: 11px;
   right: 1em;
   z-index: 101;
-  font-size:30px;
-  cursor:pointer
+  font-size: 30px;
+  cursor: pointer;
 }
 
 @media screen and (max-height: 450px) {
@@ -180,6 +180,9 @@ section {
   .hamburger {
     display: none;
   }
+  .hamburger2 {
+    display: none;
+  }
 }
 /* End overlay nav */
 /* END NAVIGATION */
@@ -190,11 +193,12 @@ section {
 .blob {
   animation: showblob 0s 5s forwards;
   visibility: hidden;
-  
 }
 
 @keyframes showblob {
-  to { visibility: visible; }
+  to {
+    visibility: visible;
+  }
 }
 
 .static-logo {
@@ -210,15 +214,18 @@ section {
 }
 
 @keyframes showblob {
-  to { visibility: visible; }
+  to {
+    visibility: visible;
+  }
 }
-
 
 @keyframes scaleVideo {
- to { visibility: hidden; }
+  to {
+    visibility: hidden;
+  }
 }
 
-.video-animation img{
+.video-animation img {
   position: absolute;
   top: -200px;
   right: -200px;
@@ -314,7 +321,7 @@ section.homePage {
 
 /* FASES background */
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .area3 {
     display: none;
   }
@@ -886,7 +893,7 @@ a {
     opacity: 30%;
     display: none;
   }
-  
+
   .deco2 {
     position: absolute;
     bottom: 400px;
@@ -1038,6 +1045,24 @@ a {
 }
 
 #myBtn:hover {
+  background-image: linear-gradient(red, red);
+}
+#myBtn2 {
+  display: none;
+  position: fixed;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  z-index: 99;
+  font-size: 22px;
+  border: none;
+  background-image: linear-gradient(red, white);
+  color: white;
+  cursor: pointer;
+  padding: 12px 15px;
+  border-radius: 100%;
+}
+
+#myBtn2:hover {
   background-image: linear-gradient(red, red);
 }
 
@@ -1495,5 +1520,68 @@ img {
   font-size: 32px;
 }
 
+/* left sidebar leerlijn */
 
+.left-links li {
+}
+.left-links a {
+  display: block;
+  list-style: none;
+  padding: 1.5em 1em;
+  margin: 1em;
+  /* background-color: rgb(255, 255, 255); */
+  width: 20%;
+  text-align: center;
+  border-radius: 10px;
+  color: red;
+  font-weight: bold;
+}
+.left-links a:hover {
+  color: black;
+  background-color: rgba(245, 245, 245, 0.034);
+}
+.left-links {
+  position: relative;
+  bottom: 150px;
+}
 
+.fase-container-link {
+  display: flex;
+}
+
+.fase-container-link i {
+  position: relative;
+  left: 14em;
+}
+
+.foto-left img{
+  width: 25%; 
+
+}
+.foto-left {
+  text-align: center;
+}
+
+.foto-left2 img{
+  width: 30%; 
+
+}
+.foto-left2 {
+  position: relative;
+  top: 250px;
+  text-align: center;
+}
+
+.weight {
+  font-weight: 600;
+}
+
+.foto-left3 img{
+  width: 35%; 
+
+}
+.foto-left3 {
+  position: relative;
+  top: 500px;
+  text-align: center;
+}
