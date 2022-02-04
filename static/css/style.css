@@ -187,52 +187,6 @@ section {
 /* End overlay nav */
 /* END NAVIGATION */
 
-/* background */
-/* IPO inleiding background */
-
-.blob {
-  animation: showblob 0s 5s forwards;
-  visibility: hidden;
-}
-
-@keyframes showblob {
-  to {
-    visibility: visible;
-  }
-}
-
-.static-logo {
-  position: absolute;
-  top: 240px;
-  right: 48%;
-  width: 100px;
-}
-
-.static-logo {
-  animation: showblob 0s 5s forwards;
-  visibility: hidden;
-}
-
-@keyframes showblob {
-  to {
-    visibility: visible;
-  }
-}
-
-@keyframes scaleVideo {
-  to {
-    visibility: hidden;
-  }
-}
-
-.video-animation img {
-  position: absolute;
-  top: -200px;
-  right: -200px;
-  animation: scaleVideo 0 4s forwards;
-  visibility: visible;
-}
-
 .home-title {
   position: absolute;
   top: 0em;
