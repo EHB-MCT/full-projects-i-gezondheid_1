@@ -223,7 +223,7 @@
       <h2>Samenwerkingspartners</h2>
       <div class="ehb-container">
         <div class="ehb-foto">
-          <img src="img/ehb schoolfoto.jpg" class="radius-foto" alt="EHB CAMPUS">
+          <img src="img/ehbschoolfoto.jpg" class="radius-foto" alt="EHB CAMPUS">
         </div>
         <div class="ehb-tekst">
           <h2 class="h2-partners">UAB</h2>
@@ -239,7 +239,7 @@
       </div>
       <div class="vub-container">
         <div class="vub-foto">
-          <img src="img/VUB campus.jpg" class="radius-foto" alt="VUB school">
+          <img src="img/VUBcampus.jpg" class="radius-foto" alt="VUB school">
         </div>
         <div class="vub-tekst">
           <h2 class="h2-partners">Werkvloer</h2>
@@ -287,24 +287,21 @@
       <input type="hidden" name="_template" value="box">
 
 
-      <label for="vnaam">Voornaam</label>
+      <label for="fname">Voornaam</label>
 
       <input type="text" id="fname" name="voornaam" placeholder="Uw voornaam..">
 
+      <label for="lnaam">Naam</label>
 
-
-      <label for="naam">Naam</label>
-
-      <input type="text" id="lname" name="lastname" placeholder="Uw naam..">
+      <input type="text" id="lnaam" name="lastname" placeholder="Uw naam..">
 
       <label for="email">Email</label>
 
-      <input type="email" name="email" placeholder="Uw e-mailadres">
+      <input type="email" id="email" name="email" placeholder="Uw e-mailadres">
 
-      <label for=" vraag">Vraag</label>
+      <label for="vraag">Vraag</label>
 
       <textarea id="vraag" name="vraag" placeholder="Stel uw vraag hier.." style="height:200px"></textarea>
-
 
 
       <input type="submit" value="Submit">
@@ -333,17 +330,17 @@
       </ul>
     </div>
   
-    <nav class="footer-nav" role="navigation">
+    <nav class="footer-nav">
       <p>Copyright &copy; 2022 - IPO. All rights reserved.</p>
     </nav>
   </footer>
 
   <!-- Back to top button -->
-  <button onclick="topFunction()" id="myBtn" title="Go to top" <i class="fas fa-angle-double-up"></i></button>
+  <button onclick="topFunction()" id="myBtn" title="Go to top" ><i class="fas fa-angle-double-up"></i></button>
 
   <script src="js/lottie.js"></script>
   <script src="js/index.js"></script>
-  <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+  <script src="js/vanilla-tilt.js"></script>
   <script>
     VanillaTilt.init(document.querySelectorAll(".card"), {
       max: 15,
